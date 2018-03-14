@@ -86,14 +86,14 @@
 
 <div id="currentSong">
     {% if current_song %}
-    <header>
-        <h4>{{current_song.title}} by {{current_song.channel}}</h4>
-    </header>
-    <img src="{{current_song.image}}" alt="Cover" width="300">
+        <header>
+            <h4>{{current_song.title}} by {{current_song.channel}}</h4>
+        </header>
+        <img src="{{current_song.image}}" class="col-md-4 videopic" alt="Cover">
     {% else %}
-    <header>
-        <h4>No songs playing currently</h4>
-    </header>
+        <header>
+            <h4>No songs playing currently</h4>
+        </header>
     {% endif %}
 </div>
 
